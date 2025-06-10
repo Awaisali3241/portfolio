@@ -7,7 +7,7 @@ import { Card, CardContent } from "@/components/ui/card"
 
 export default function Projects() {
   const [isVisible, setIsVisible] = useState(false)
-  const sectionRef = useRef<HTMLElement>(null)
+  const sectionRef = useRef(null)
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -85,9 +85,8 @@ export default function Projects() {
                   style={{ transitionDelay: `${index * 300}ms` }}
                 >
                   <Card className="border-0 shadow-2xl hover:shadow-3xl transition-all duration-500 hover:-translate-y-3 group overflow-hidden h-full bg-white">
-                    {/* Enhanced Project Header */}
+                    {/* Project Header */}
                     <div className={`bg-gradient-to-br ${project.bgGradient} p-8 relative overflow-hidden`}>
-                      {/* Background Pattern */}
                       <div className="absolute inset-0 opacity-10">
                         <div className="absolute top-0 right-0 w-40 h-40 bg-white rounded-full -translate-y-20 translate-x-20"></div>
                         <div className="absolute bottom-0 left-0 w-32 h-32 bg-white rounded-full translate-y-16 -translate-x-16"></div>
@@ -143,7 +142,7 @@ export default function Projects() {
                         </div>
                       </div>
 
-                      {/* Action Buttons */}
+                      {/* Actions */}
                       <div className="flex gap-4">
                         <Button
                           variant="outline"
@@ -166,7 +165,7 @@ export default function Projects() {
               ))}
             </div>
 
-            {/* Enhanced More Projects CTA */}
+            {/* CTA */}
             <div className="text-center">
               <div className="bg-gradient-to-r from-blue-50 via-purple-50 to-blue-50 rounded-3xl p-10 shadow-xl border border-gray-100">
                 <div className="max-w-4xl mx-auto">
@@ -191,6 +190,7 @@ export default function Projects() {
                 </div>
               </div>
             </div>
+
           </div>
         </div>
       </div>

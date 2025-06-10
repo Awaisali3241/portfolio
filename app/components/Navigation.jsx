@@ -13,7 +13,6 @@ export default function Navigation() {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50)
 
-      // Update active section based on scroll position
       const sections = ["home", "about", "experience", "skills", "projects", "contact"]
       const scrollPosition = window.scrollY + 100
 
@@ -44,7 +43,7 @@ export default function Navigation() {
     { name: "Contact", href: "#contact" },
   ]
 
-  const scrollToSection = (href: string) => {
+  const scrollToSection = (href) => {
     const element = document.querySelector(href)
     if (element) {
       element.scrollIntoView({ behavior: "smooth", block: "start" })
@@ -64,7 +63,7 @@ export default function Navigation() {
             onClick={() => scrollToSection("#home")}
             className="text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent hover:scale-105 transition-transform duration-300"
           >
-            Zain Ul Abideen
+            Awais Ali
           </button>
 
           {/* Desktop Navigation */}

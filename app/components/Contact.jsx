@@ -1,7 +1,5 @@
 "use client"
 
-import type React from "react"
-
 import { useEffect, useRef, useState } from "react"
 import { Mail, MapPin, Linkedin, Send, MessageCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -18,7 +16,7 @@ export default function Contact() {
     subject: "",
     message: "",
   })
-  const sectionRef = useRef<HTMLElement>(null)
+  const sectionRef = useRef(null)
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -37,12 +35,12 @@ export default function Contact() {
     return () => observer.disconnect()
   }, [])
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleInputChange = (e) => {
     const { name, value } = e.target
     setFormData((prev) => ({ ...prev, [name]: value }))
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e) => {
     e.preventDefault()
     // Handle form submission here
     console.log("Form submitted:", formData)

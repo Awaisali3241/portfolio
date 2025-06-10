@@ -5,7 +5,7 @@ import { Code, Zap, Users, Target } from "lucide-react"
 
 export default function About() {
   const [isVisible, setIsVisible] = useState(false)
-  const sectionRef = useRef<HTMLElement>(null)
+  const sectionRef = useRef(null)
 
   useEffect(() => {
     const observer = new IntersectionObserver(

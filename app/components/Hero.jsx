@@ -11,7 +11,7 @@ export default function Hero() {
     setMounted(true)
   }, [])
 
-  const scrollToSection = (href: string) => {
+  const scrollToSection = (href) => {
     const element = document.querySelector(href)
     if (element) {
       element.scrollIntoView({ behavior: "smooth", block: "start" })
@@ -31,7 +31,7 @@ export default function Hero() {
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-blue-400/10 to-purple-400/10 rounded-full blur-3xl animate-pulse"></div>
         <div
           className="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-tr from-purple-400/10 to-blue-400/10 rounded-full blur-3xl animate-pulse"
-          style={{ animationDelay: "1s" }}
+          style={{ animationDelay: "2s" }}
         ></div>
         <div
           className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-r from-blue-300/5 to-purple-300/5 rounded-full blur-3xl animate-pulse"
@@ -62,25 +62,25 @@ export default function Hero() {
             ></div>
           </div>
 
-          <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-4 leading-tight">Zain Ul Abideen</h1>
+          <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-4 leading-tight">Awais Ali</h1>
 
           <h2 className="text-2xl md:text-4xl font-semibold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-6">
-            Frontend | Backend Developer
+            SEO | SEM Specialist
           </h2>
 
           <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-4xl mx-auto leading-relaxed">
-            Building clean, efficient, and responsive web and desktop solutions
+            Driving growth through data-driven Search & Paid strategies
           </p>
 
           <p className="text-lg text-gray-500 mb-12 max-w-3xl mx-auto leading-relaxed">
-            Computer Science graduate from Islamabad, Pakistan, passionate about creating innovative solutions with
-            modern technologies
+            Helping businesses grow through targeted traffic, lead generation, and performance marketing.
+Marketing graduate from Hazara University, scaling brands with SEO, Google Ads, and Semantic SEO strategies.
           </p>
 
           {/* Enhanced Social Links */}
           <div className="flex justify-center gap-4 mb-8">
             <a
-              href="https://linkedin.com/in/zain-ul-abideen-7605b487"
+              href="https://www.linkedin.com/in/awaisali-seospecialist/"
               target="_blank"
               rel="noopener noreferrer"
               className="w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center text-blue-600 hover:text-white hover:bg-blue-600 transition-all duration-300 hover:scale-110 hover:shadow-xl"
@@ -94,7 +94,7 @@ export default function Hero() {
               <Github className="w-5 h-5" />
             </a>
             <a
-              href="mailto:chxain10@gmail.com"
+              href="aliawan3241@gmail.com"
               className="w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center text-purple-600 hover:text-white hover:bg-purple-600 transition-all duration-300 hover:scale-110 hover:shadow-xl"
             >
               <Mail className="w-5 h-5" />

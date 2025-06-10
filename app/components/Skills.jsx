@@ -5,15 +5,14 @@ import { Code, Database, Users, Zap, Settings } from "lucide-react"
 
 export default function Skills() {
   const [isVisible, setIsVisible] = useState(false)
-  const [animatedSkills, setAnimatedSkills] = useState<number[]>([])
-  const sectionRef = useRef<HTMLElement>(null)
+  const [animatedSkills, setAnimatedSkills] = useState([])
+  const sectionRef = useRef(null)
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
           setIsVisible(true)
-          // Animate skills one by one
           const timer = setInterval(() => {
             setAnimatedSkills((prev) => {
               if (prev.length < technicalSkills.length) {
@@ -191,6 +190,7 @@ export default function Skills() {
                 </div>
               </div>
             </div>
+
           </div>
         </div>
       </div>
