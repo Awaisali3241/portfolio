@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useRef, useState } from "react"
-import { Code, Zap, Users, Target } from "lucide-react"
+import { Search, TrendingUp, BookOpenCheck, ArrowUpRight } from "lucide-react"
 
 export default function About() {
   const [isVisible, setIsVisible] = useState(false)
@@ -26,24 +26,24 @@ export default function About() {
 
   const highlights = [
     {
-      icon: <Code className="w-6 h-6" />,
-      title: "Full-Stack Development",
-      description: "GoLang, JavaScript, PostgreSQL",
+      icon: <Search className="w-6 h-6" />,
+      title: "Results-Focused SEO",
+      description: "Creating strategies that move rankings & traffic",
     },
     {
-      icon: <Zap className="w-6 h-6" />,
-      title: "Fast Learning",
-      description: "Quick adaptation to new technologies",
+      icon: <TrendingUp className="w-6 h-6" />,
+      title: "Marketing Growth",
+      description: "Solving real challenges with measurable impact",
     },
     {
-      icon: <Users className="w-6 h-6" />,
-      title: "Problem Solving",
-      description: "Creative solutions to complex challenges",
+      icon: <BookOpenCheck className="w-6 h-6" />,
+      title: "Continuous Learning",
+      description: "Always testing, improving & scaling campaigns",
     },
     {
-      icon: <Target className="w-6 h-6" />,
-      title: "Automation Expert",
-      description: "Workflow optimization and efficiency",
+      icon: <ArrowUpRight className="w-6 h-6" />,
+      title: "Data-Backed Decisions",
+      description: "Helping brands grow through smart analytics",
     },
   ]
 
@@ -70,50 +70,27 @@ export default function About() {
             <div className="grid lg:grid-cols-2 gap-16 items-center mb-16">
               <div className="space-y-6 text-left">
                 <p className="text-xl text-gray-600 leading-relaxed">
-                  Computer Science graduate skilled in{" "}
-                  <span className="font-semibold text-blue-600 bg-blue-50 px-2 py-1 rounded">GoLang</span>,{" "}
-                  <span className="font-semibold text-purple-600 bg-purple-50 px-2 py-1 rounded">JavaScript</span>,{" "}
-                  <span className="font-semibold text-blue-600 bg-blue-50 px-2 py-1 rounded">PostgreSQL</span>,{" "}
-                  <span className="font-semibold text-purple-600 bg-purple-50 px-2 py-1 rounded">GHL CRM</span>, and
-                  more.
+                  Marketing graduate skilled in{" "}
+                  <span className="font-semibold text-blue-600 bg-blue-50 px-2 py-1 rounded">SEO</span>,{" "}
+                  <span className="font-semibold text-purple-600 bg-purple-50 px-2 py-1 rounded">Google Ads</span>,{" "}
+                  <span className="font-semibold text-blue-600 bg-blue-50 px-2 py-1 rounded">WordPress</span>,{" "}
+                  <span className="font-semibold text-purple-600 bg-purple-50 px-2 py-1 rounded">GA4</span>, and
+                  performance marketing.
                 </p>
 
                 <p className="text-xl text-gray-600 leading-relaxed">
                   Known for <span className="font-semibold text-gray-800">fast learning</span>,{" "}
-                  <span className="font-semibold text-gray-800">problem-solving</span>, and{" "}
-                  <span className="font-semibold text-gray-800">automation</span>. I'm passionate about creating
-                  efficient solutions that bridge the gap between complex backend systems and intuitive user
-                  experiences.
+                  <span className="font-semibold text-gray-800">strategic thinking</span>, and{" "}
+                  <span className="font-semibold text-gray-800">data-driven growth</span>. I’m passionate about helping
+                  businesses rank better, generate leads, and get measurable results through search.
                 </p>
 
                 <p className="text-xl text-gray-600 leading-relaxed">
                   Based in{" "}
-                  <span className="font-semibold text-gray-800 bg-gray-100 px-2 py-1 rounded">Islamabad, Pakistan</span>
-                  , I bring a unique perspective to every project, combining technical expertise with creative
-                  problem-solving to deliver exceptional results.
+                  <span className="font-semibold text-gray-800 bg-gray-100 px-2 py-1 rounded">Islamabad, Pakistan</span>,
+                  I bring a balance of creativity and analytics to every campaign, focusing on results that actually
+                  move the needle.
                 </p>
-
-                <div className="pt-6">
-                  <h4 className="text-lg font-semibold text-gray-900 mb-4">What drives me:</h4>
-                  <ul className="space-y-2 text-gray-600">
-                    <li className="flex items-center">
-                      <div className="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
-                      Creating clean, maintainable code
-                    </li>
-                    <li className="flex items-center">
-                      <div className="w-2 h-2 bg-purple-600 rounded-full mr-3"></div>
-                      Solving complex technical challenges
-                    </li>
-                    <li className="flex items-center">
-                      <div className="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
-                      Continuous learning and growth
-                    </li>
-                    <li className="flex items-center">
-                      <div className="w-2 h-2 bg-purple-600 rounded-full mr-3"></div>
-                      Building user-centric solutions
-                    </li>
-                  </ul>
-                </div>
               </div>
 
               <div className="relative">
@@ -122,29 +99,29 @@ export default function About() {
 
                   {/* Animated Code Elements */}
                   <div className="absolute top-8 left-8 text-blue-600 font-mono text-sm opacity-60">
-                    {"<developer>"}
+                    {"<seo>"}
                   </div>
                   <div className="absolute bottom-8 right-8 text-purple-600 font-mono text-sm opacity-60">
-                    {"</developer>"}
+                    {"</seo>"}
                   </div>
 
-                  <div className="text-8xl font-bold text-gray-200 relative z-10">ZA</div>
+                  <div className="text-8xl font-bold text-gray-200 relative z-10">AWAIS</div>
 
                   {/* Floating Tech Icons */}
                   <div className="absolute top-6 right-6 w-12 h-12 bg-blue-500/10 rounded-lg flex items-center justify-center animate-pulse">
-                    <Code className="w-6 h-6 text-blue-600" />
+                    <Search className="w-6 h-6 text-blue-600" />
                   </div>
                   <div
                     className="absolute bottom-6 left-6 w-10 h-10 bg-purple-500/10 rounded-lg flex items-center justify-center animate-pulse"
                     style={{ animationDelay: "0.5s" }}
                   >
-                    <Zap className="w-5 h-5 text-purple-600" />
+                    <TrendingUp className="w-5 h-5 text-purple-600" />
                   </div>
                   <div
                     className="absolute top-1/2 left-6 w-8 h-8 bg-blue-400/10 rounded-lg flex items-center justify-center animate-pulse"
                     style={{ animationDelay: "1s" }}
                   >
-                    <Target className="w-4 h-4 text-blue-500" />
+                    <ArrowUpRight className="w-4 h-4 text-blue-500" />
                   </div>
                 </div>
               </div>

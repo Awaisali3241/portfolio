@@ -25,60 +25,85 @@ export default function Experience() {
     return () => observer.disconnect()
   }, [])
 
-  const experiences = [
-    {
-      title: "Customer Support Agent",
-      company: "Leadcapture Agency",
-      period: "Nov 2023 – May 2024",
-      location: "Remote",
-      description:
-        "Provided exceptional customer support and managed client relationships, improving customer satisfaction rates through effective communication and problem-solving.",
-      achievements: [
-        "Improved customer satisfaction by 25%",
-        "Handled 50+ daily support tickets",
-        "Implemented new support workflows",
-      ],
-      color: "from-blue-500 to-blue-600",
-      bgColor: "from-blue-50 to-blue-100",
-    },
-    {
-      title: "Backend Developer",
-      company: "Wadood Travel",
-      period: "Nov 2022 – Aug 2023",
-      location: "Islamabad, Pakistan",
-      description:
-        "Developed and maintained backend systems for travel booking platform, implementing efficient APIs and database solutions using modern technologies.",
-      achievements: ["Built RESTful APIs", "Optimized database queries", "Implemented booking system"],
-      color: "from-purple-500 to-purple-600",
-      bgColor: "from-purple-50 to-purple-100",
-    },
-    {
-      title: "Web Developer Intern",
-      company: "Genesis Engineering",
-      period: "Aug 2022 – Nov 2022",
-      location: "Islamabad, Pakistan",
-      description:
-        "Gained hands-on experience in web development, working on various projects and learning industry best practices in a collaborative environment.",
-      achievements: ["Completed 5+ web projects", "Learned modern frameworks", "Collaborated with senior developers"],
-      color: "from-blue-500 to-purple-500",
-      bgColor: "from-blue-50 to-purple-100",
-    },
-    {
-      title: "Sales Executive",
-      company: "Mars BPO",
-      period: "Mar 2019 – Feb 2020",
-      location: "Islamabad, Pakistan",
-      description:
-        "Developed strong communication and sales skills, consistently meeting targets and building lasting client relationships in a fast-paced environment.",
-      achievements: [
-        "Exceeded sales targets by 20%",
-        "Built strong client relationships",
-        "Developed communication skills",
-      ],
-      color: "from-purple-500 to-blue-500",
-      bgColor: "from-purple-50 to-blue-100",
-    },
-  ]
+ const experiences = [
+  {
+    title: "SEO & Google Ads Expert",
+    company: "DigiAura360",
+    period: "Nov 2024 – Present",
+    location: "Onsite",
+    description:
+      "Managing SEO strategies, Google Ads campaigns, and email marketing to drive brand visibility and conversions across digital channels.",
+    achievements: [
+      "Developed & executed full-funnel SEO strategies",
+      "Optimized campaigns using GA4, Search Console, SEMrush",
+      "Increased organic traffic and lead generation",
+    ],
+    color: "from-blue-500 to-purple-600",
+    bgColor: "from-blue-50 to-purple-100",
+  },
+  {
+    title: "On-Page SEO Specialist (Part-Time)",
+    company: "Native Brains",
+    period: "Apr 2025 – Present",
+    location: "Remote",
+    description:
+      "Focused on optimizing website structure, content, and meta elements to improve search performance using GA4 insights and semantic principles.",
+    achievements: [
+      "Improved internal linking and content hierarchy",
+      "Boosted page performance through Core Web Vitals",
+      "Maintained on-page optimization documentation",
+    ],
+    color: "from-blue-500 to-blue-600",
+    bgColor: "from-blue-50 to-blue-100",
+  },
+  {
+    title: "SEO Executive",
+    company: "Disrupt.com (formerly Gaditek)",
+    period: "Nov 2023 – Jan 2025",
+    location: "Remote",
+    description:
+      "Executed data-driven SEO strategies to improve site visibility, search engine rankings, and user experience through semantic SEO best practices.",
+    achievements: [
+      "Performed keyword research and content audits",
+      "Enhanced rankings using E-E-A-T and structured data",
+      "Collaborated with dev/content teams on SEO implementation",
+    ],
+    color: "from-purple-500 to-blue-500",
+    bgColor: "from-purple-50 to-blue-100",
+  },
+  {
+    title: "Marketing Trainee",
+    company: "Disrupt.com (formerly Gaditek)",
+    period: "Sep 2023 – Dec 2023",
+    location: "Remote",
+    description:
+      "Supported the SEO team by assisting in keyword research, on-page optimization, and content strategy to strengthen search engine presence.",
+    achievements: [
+      "Assisted in content audits & meta tag improvements",
+      "Conducted competitive research",
+      "Supported campaign strategy planning",
+    ],
+    color: "from-blue-600 to-purple-600",
+    bgColor: "from-blue-50 to-purple-100",
+  },
+  {
+    title: "SEO & Social Media Manager (Part-Time)",
+    company: "Dream Valley Tours",
+    period: "Apr 2022 – Jun 2023",
+    location: "Onsite",
+    description:
+      "Created and managed engaging social content to support SEO and brand awareness, improving audience engagement and visibility.",
+    achievements: [
+      "Planned and executed content calendar",
+      "Increased engagement on social channels",
+      "Aligned messaging with SEO campaigns",
+    ],
+    color: "from-purple-500 to-purple-600",
+    bgColor: "from-purple-50 to-purple-100",
+  },
+  
+]
+
 
   return (
     <section ref={sectionRef} id="experience" className="py-24 bg-gray-50 relative overflow-hidden">
