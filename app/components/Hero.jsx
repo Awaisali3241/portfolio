@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { Download, Mail, ArrowDown, Github, Linkedin } from "lucide-react"
+import { Download, Mail, ArrowDown, Linkedin } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export default function Hero() {
@@ -20,7 +20,7 @@ export default function Hero() {
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      {/* Enhanced Gradient Background */}
+      {/* Gradient Background */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-purple-50"></div>
         <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-blue-50/30 to-purple-50/30"></div>
@@ -28,13 +28,13 @@ export default function Hero() {
 
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-blue-400/10 to-purple-400/10 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-blue-400/10 to-purple-400/10 rounded-full blur-3xl pulse-slow"></div>
         <div
-          className="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-tr from-purple-400/10 to-blue-400/10 rounded-full blur-3xl animate-pulse"
+          className="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-tr from-purple-400/10 to-blue-400/10 rounded-full blur-3xl pulse-slow"
           style={{ animationDelay: "2s" }}
         ></div>
         <div
-          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-r from-blue-300/5 to-purple-300/5 rounded-full blur-3xl animate-pulse"
+          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-r from-blue-300/5 to-purple-300/5 rounded-full blur-3xl pulse-slow"
           style={{ animationDelay: "2s" }}
         ></div>
       </div>
@@ -45,16 +45,18 @@ export default function Hero() {
             mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          {/* Enhanced Profile Image */}
+          {/* Profile Image */}
           <div className="w-36 h-36 mx-auto mb-8 relative group">
-            <div className="w-full h-full rounded-full bg-gradient-to-r from-blue-500 to-purple-600 p-1 animate-pulse group-hover:animate-none transition-all duration-300">
-              <div className="w-full h-full rounded-full bg-white flex items-center justify-center shadow-2xl">
-                <div className="w-32 h-32 rounded-full bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center text-3xl font-bold text-gray-600 group-hover:scale-105 transition-transform duration-300">
-                  ZA
-                </div>
+            <div className="w-full h-full rounded-full bg-gradient-to-r from-blue-500 to-purple-600 p-1 pulse-slow group-hover:animate-none transition-all duration-300">
+              <div className="w-full h-full rounded-full bg-white flex items-center justify-center shadow-2xl overflow-hidden">
+                <img
+                  src="/awais.png"
+                  alt="Awais Ali"
+                  className="w-32 h-32 rounded-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
               </div>
             </div>
-            {/* Floating dots around profile */}
+            {/* Floating dots */}
             <div className="absolute -top-2 -right-2 w-4 h-4 bg-blue-500 rounded-full animate-bounce"></div>
             <div
               className="absolute -bottom-2 -left-2 w-3 h-3 bg-purple-500 rounded-full animate-bounce"
@@ -74,10 +76,10 @@ export default function Hero() {
 
           <p className="text-lg text-gray-500 mb-12 max-w-3xl mx-auto leading-relaxed">
             Helping businesses grow through targeted traffic, lead generation, and performance marketing.
-Marketing graduate from Hazara University, scaling brands with SEO, Google Ads, and Semantic SEO strategies.
+            Marketing graduate from Hazara University, scaling brands with SEO, Google Ads, and Semantic SEO strategies.
           </p>
 
-          {/* Enhanced Social Links */}
+          {/* Social Links */}
           <div className="flex justify-center gap-4 mb-8">
             <a
               href="https://www.linkedin.com/in/awaisali-seospecialist/"
@@ -88,40 +90,35 @@ Marketing graduate from Hazara University, scaling brands with SEO, Google Ads, 
               <Linkedin className="w-5 h-5" />
             </a>
             <a
-              href="#"
-              className="w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center text-gray-700 hover:text-white hover:bg-gray-800 transition-all duration-300 hover:scale-110 hover:shadow-xl"
-            >
-              <Github className="w-5 h-5" />
-            </a>
-            <a
-              href="aliawan3241@gmail.com"
+              href="mailto:aliawan3241@gmail.com"
               className="w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center text-purple-600 hover:text-white hover:bg-purple-600 transition-all duration-300 hover:scale-110 hover:shadow-xl"
             >
               <Mail className="w-5 h-5" />
             </a>
           </div>
 
-          {/* Enhanced CTA Buttons */}
+          {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
-            <Button
-              size="lg"
-              className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white rounded-full px-8 py-4 text-lg font-semibold shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 hover:-translate-y-1"
+            <a
+              href="/awais-resume.pdf"
+              download
+              className="inline-flex items-center justify-center bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white rounded-full px-6 py-3 text-base font-semibold shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 hover:-translate-y-1"
             >
               <Download className="w-5 h-5 mr-2" />
               Download CV
-            </Button>
+            </a>
             <Button
               size="lg"
               variant="outline"
               onClick={() => scrollToSection("#contact")}
-              className="border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white rounded-full px-8 py-4 text-lg font-semibold transition-all duration-300 hover:scale-105 hover:-translate-y-1 shadow-lg hover:shadow-xl"
+              className="border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white rounded-full px-6 py-3 text-base font-semibold transition-all duration-300 hover:scale-105 hover:-translate-y-1 shadow-lg hover:shadow-xl"
             >
               <Mail className="w-5 h-5 mr-2" />
               Contact Me
             </Button>
           </div>
 
-          {/* Enhanced Scroll Indicator */}
+          {/* Scroll Indicator */}
           <div className="animate-bounce">
             <button
               onClick={() => scrollToSection("#about")}
