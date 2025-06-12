@@ -48,9 +48,11 @@ export default function Contact() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          name: `${formData.firstName} ${formData.lastName}`,
+          firstName: formData.firstName,
+          lastName: formData.lastName,
           email: formData.email,
-          message: `${formData.subject}\n\n${formData.message}`,
+          subject: formData.subject,
+          message: formData.message,
         }),
       })
 
@@ -97,7 +99,6 @@ export default function Contact() {
 
   return (
     <section ref={sectionRef} id="contact" className="py-24 bg-white relative overflow-hidden">
-      {/* Background blur */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-20 left-20 w-72 h-72 bg-blue-100/20 rounded-full blur-3xl"></div>
         <div className="absolute bottom-20 right-20 w-72 h-72 bg-purple-100/20 rounded-full blur-3xl"></div>
@@ -110,7 +111,6 @@ export default function Contact() {
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
             }`}
           >
-            {/* Heading */}
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">Let's Work Together</h2>
               <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full"></div>
@@ -120,7 +120,6 @@ export default function Contact() {
             </div>
 
             <div className="grid xl:grid-cols-2 gap-16">
-              {/* Left: Info + Quick Email */}
               <div className="space-y-8">
                 <h3 className="text-3xl font-bold text-gray-900">Get In Touch</h3>
                 <p className="text-lg text-gray-600">
@@ -178,7 +177,6 @@ export default function Contact() {
                 </Button>
               </div>
 
-              {/* Right: Form */}
               <Card className="border-0 shadow-2xl">
                 <CardContent className="p-10">
                   <h4 className="text-2xl font-bold text-gray-900 mb-8 flex items-center">
