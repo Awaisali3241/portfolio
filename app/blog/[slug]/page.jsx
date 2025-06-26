@@ -2,8 +2,10 @@ import { projects } from "@/data/projects"
 import { notFound } from "next/navigation"
 import Image from "next/image"
 
-export default function BlogPost({ params }) {
-  const blog = projects.find((p) => p.slug === params.slug)
+export default async function BlogPost({ params }) {
+  const { slug } = params
+
+  const blog = projects.find((p) => p.slug === slug)
   if (!blog) return notFound()
 
   return (
@@ -21,18 +23,24 @@ export default function BlogPost({ params }) {
 
       <div className="space-y-6 text-lg text-gray-800">
         {blog.content.map((block, i) => {
-          if (block.type === "heading") return <h2 key={i} className="text-2xl font-semibold mt-8">{block.text}</h2>
-          if (block.type === "paragraph") return <p key={i}>{block.text}</p>
-          if (block.type === "image") return (
-            <Image
-              key={i}
-              src={block.src}
-              alt={block.alt}
-              width={800}
-              height={400}
-              className="rounded-lg my-6"
-            />
-          )
+          if (block.type === "heading") {
+            return <h2 key={i} className="text-2xl font-semibold mt-8">{block.text}</h2>
+          }
+          if (block.type === "paragraph") {
+            return <p key={i}>{block.text}</p>
+          }
+          if (block.type === "image") {
+            return (
+              <Image
+                key={i}
+                src={block.src}
+                alt={block.alt}
+                width={800}
+                height={400}
+                className="rounded-lg my-6"
+              />
+            )
+          }
           return null
         })}
       </div>

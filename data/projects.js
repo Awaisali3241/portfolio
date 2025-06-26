@@ -1,97 +1,115 @@
 // /data/projects.js
 export const projects = [
   {
-    slug: "performance-boost-for-all-about-aicom",
-    title: "Performance Boost for All About AI.com – How-to Guide",
-    category: "Performance Optimization",
+    slug: "performance-boost-for-allaboutai",
+    title: "Performance Boost for AllAboutAI.com – How-To Guide",
+    category: "SEO",
     image: "/projects/all-about-ai.webp",
-    description: "A case study and guide on improving Core Web Vitals for All About AI.com using advanced speed optimization techniques.",
+    description:
+      "Boosted traffic to AllAboutAI’s How-To Guides with Semantic SEO, reaching 20,000+ users in just 2 months through smart content structuring and internal linking.",
     content: [
       {
         type: "heading",
-        text: "Introduction"
+        text: "Tools Used"
       },
       {
         type: "paragraph",
-        text: "This blog post shares a real-world case study on how I improved the performance score of All About AI.com from a failing grade to a fast, responsive, and SEO-friendly site."
+        text: "Ahrefs • Google Analytics • Google Search Console • Google Trends • Looker Studio"
+      },
+      {
+        type: "heading",
+        text: "Skills Applied"
+      },
+      {
+        type: "paragraph",
+        text: "Keyword Clustering & Research • On-Page SEO • Semantic SEO • SEO Content Writing • Internal Linking Strategy"
+      },
+
+
+      {
+        type: "heading",
+        text: "Semantic SEO for AllAboutAI"
+      },
+      {
+        type: "paragraph",
+        text: "As an SEO specialist, I optimized the How-To Guides category on AllAboutAI.com using Semantic SEO strategies, achieving a massive boost in organic traffic. By leveraging topical authority, internal linking, and advanced on-page SEO, we drove 20,000+ users in just 2 months."
       },
       {
         type: "image",
-        src: "/projects/lighthouse-before.png",
-        alt: "Lighthouse score before optimization"
+        src: "/projects/allaboutai-home-page.webp",
+        alt: "AllAboutAI homepage after SEO improvements"
+      },
+      {
+        type: "heading",
+        text: "1. SEO Strategy & Implementation 🔍"
       },
       {
         type: "paragraph",
-        text: "The website initially had issues with poor LCP (Largest Contentful Paint), unused JavaScript, and unoptimized images."
+        text: "Applied Koray Tugberk’s Semantic SEO framework to structure content for better discoverability and topical relevance."
       },
-
       {
-        type: "heading",
-        text: "Before & After Performance"
+        type: "list",
+        items: [
+          "✔ Improved keyword rankings with in-depth content structuring",
+          "✔ Strengthened internal linking to boost authority flow",
+          "✔ Enhanced user experience & engagement with optimized content"
+        ]
       },
       {
         type: "image",
-        src: "/projects/lighthouse-after.png",
-        alt: "Lighthouse score after optimization"
+        src: "/projects/gsc-performance.webp",
+        alt: "Google Search Console performance data"
       },
-      {
-        type: "paragraph",
-        text: "Here’s a look at the results after optimization:"
-      },
-
       {
         type: "heading",
-        text: "Optimization Strategy"
+        text: "2. Organic Traffic Growth 📈"
       },
       {
         type: "paragraph",
-        text: "✅ Used lazy loading for all images to reduce initial load time."
+        text: "Optimizations led to a massive spike in clicks, impressions, and user engagement for the How-To Guides category."
       },
       {
-        type: "paragraph",
-        text: "✅ Removed unused CSS and JavaScript using PurgeCSS."
-      },
-      {
-        type: "paragraph",
-        text: "✅ Compressed images using next-gen formats like WebP."
-      },
-      {
-        type: "paragraph",
-        text: "✅ Implemented server-side caching and CDN distribution for faster global access."
-      },
-      {
-        type: "paragraph",
-        text: "✅ Reduced third-party scripts and deferred non-critical JS."
-      },
-
-      {
-        type: "heading",
-        text: "Results"
-      },
-      {
-        type: "paragraph",
-        text: "The result was a 90+ score on desktop and a significant improvement on mobile performance."
+        type: "list",
+        items: [
+          "✔ Achieved 20,000+ users in 2 months 📊",
+          "✔ Increased impressions & CTR significantly",
+          "✔ Improved rankings for multiple high-volume queries"
+        ]
       },
       {
         type: "image",
-        src: "/projects/performance-graph.png",
-        alt: "Performance improvement graph"
+        src: "/projects/looker-studio-snapshot.webp",
+        alt: "Looker Studio dashboard showing analytics"
       },
-
       {
         type: "heading",
-        text: "Conclusion"
+        text: "3. Tools & Data Insights 🛠"
       },
       {
         type: "paragraph",
-        text: "These changes not only improved user experience but also helped in SEO rankings and increased conversion rates."
+        text: "We used Google Search Console & Ahrefs to track performance, identify opportunities, and refine our strategy."
+      },
+      {
+        type: "list",
+        items: [
+          "✔ Leveraged data-driven insights to optimize pages",
+          "✔ Continuous monitoring & adjustments for sustained growth",
+          "✔ Focused on semantic relationships & user intent"
+        ]
+      },
+      {
+        type: "image",
+        src: "/projects/ahrefs-organic-traffic.webp",
+        alt: "Ahrefs organic traffic graph"
       },
       {
         type: "paragraph",
-        text: "Feel free to follow this guide to optimize your own blog or business site. Performance is a key ranking factor today."
+        text: "Want similar results for your website? Let’s connect."
       }
     ]
   },
+
+  // Existing project (unchanged)
   {
     slug: "google-ads-lead-funnel",
     title: "Google Ads Lead Funnel",
@@ -103,6 +121,5 @@ export const projects = [
       { type: "paragraph", text: "This blog explains the lead funnel approach..." },
       { type: "image", src: "/blog/ads-detail.jpg", alt: "Google Ads strategy" },
     ],
-  },
-  // Add more entries here
-]
+  }
+];
