@@ -30,7 +30,7 @@ export default function Projects() {
       <div className="container mx-auto px-4 relative z-10">
         <div className={`transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">Blog</h2>
+            <h2 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">Projects</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full"></div>
           </div>
 
