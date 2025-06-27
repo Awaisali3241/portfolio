@@ -3,9 +3,7 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 
 export default async function BlogPost({ params }) {
-  // Just destructuring `params` inside an async function is enough
   const { slug } = params;
-
   const blog = projects.find((p) => p.slug === slug);
   if (!blog) return notFound();
 
@@ -22,7 +20,7 @@ export default async function BlogPost({ params }) {
         className="w-full h-auto rounded-xl mb-8 object-cover"
       />
 
-      <div className="space-y-6 text-lg text-gray-800">
+      <div className="space-y-4 text-lg text-gray-800">
         {blog.content.map((block, i) => {
           if (block.type === "heading") {
             return (
@@ -33,9 +31,23 @@ export default async function BlogPost({ params }) {
           }
 
           if (block.type === "paragraph") {
+            // Special formatting for Tools: and Skills:
+            if (
+              block.text.startsWith("Tools:") ||
+              block.text.startsWith("Skills:")
+            ) {
+              const [label, rest] = block.text.split(": ");
+              return (
+                <p key={i} className="leading-[1] mb-1 text-gray-800 text-[17px]">
+                  <strong>{label}:</strong> {rest}
+                </p>
+              );
+            }
+
             return (
               <p
                 key={i}
+                className="leading-relaxed mb-4 text-gray-800 text-[17px]"
                 dangerouslySetInnerHTML={{ __html: block.text }}
               />
             );

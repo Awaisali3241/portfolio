@@ -231,4 +231,147 @@ export const projects = [
       },
     ],
   },
+
+   // ✅ Blog 3 (NEW)
+  {
+  slug: "seo-strategy-suits-consultants",
+  title: "SEO & Content Strategy for SuitsConsultants.com – Bookkeeping & Advisory",
+  category: "SEO",
+  image: "/projects/suits-consultants-project-cover.webp",
+  description:
+    "Boosted visibility and performance for SuitsConsultants.com by implementing a content-driven SEO strategy focused on bookkeeping and business growth.",
+  content: [
+    {
+      type: "paragraph",
+      text: "Tools: GA4 • GSC • Ahrefs • Google Trends • WP Rocket",
+    },
+    {
+      type: "paragraph",
+      text: "Skills: Keyword Research • SEO Content Writing • On-Page SEO • Page Speed Optimization • Topical Structuring",
+    },
+    {
+        type: "author",
+        name: "Awais Ali",
+        image: "/awais.png",
+      },
+    {
+      type: "separator",
+    },
+    {
+      type: "heading",
+      text: "Project Overview",
+    },
+    {
+      type: "paragraph",
+      text: "I collaborated with SuitsConsultants.com, a business consulting and accounting firm, to enhance their online presence through strategic content planning, blog creation, and performance monitoring. By targeting bookkeeping-related queries and enhancing technical SEO, we generated steady organic growth.",
+    },
+    {
+      type: "image",
+      src: "/projects/home-page-snapshot.webp",
+      alt: "SuitsConsultants homepage snapshot",
+    },
+    {
+      type: "heading",
+      text: "1. Content Strategy & Blog SEO ✍️",
+    },
+    {
+      type: "paragraph",
+      text: "Created and optimized blog content to target high-intent keywords around bookkeeping, accounting, and business growth. Each post was structured for semantic depth and internal linking.",
+    },
+    {
+      type: "image",
+      src: "/projects/blogs-page.webp",
+      alt: "Blogs page screenshot",
+    },
+    {
+      type: "paragraph",
+      text: "📌<strong>Key Blogs Written:</strong>",
+    },
+    {
+      type: "list",
+      items: [
+        "The Complete Guide to Bookkeeping & Accounting",
+        "5 Bookkeeping Mistakes and How to Avoid Them",
+        "Why Businesses Are Outsourcing Bookkeeping",
+        "Cloud Bookkeeping: Why You Need It",
+        "Bookkeeper vs Accountant: Which Does Your Business Need?",
+      ],
+    },
+    {
+      type: "paragraph",
+      text: "📌<strong>wins:</strong>",
+    },
+    {
+      type: "list",
+      items: [
+        "✔ Built topical coverage across the blog",
+        "✔ Improved content layout, structure, and internal links",
+        "✔ Enhanced on-page SEO with optimized meta and headings",
+      ],
+    },
+    {
+      type: "heading",
+      text: "2. Performance Overview",
+    },
+    {
+      type: "image",
+      src: "/projects/suits-looker-studios-screeshot.webp",
+      alt: "Looker Studio screenshot",
+    },
+    {
+      type: "list",
+      items: [
+        "343 Active Users",
+        "100% New Users",
+        "1.9 Pageviews/User",
+        "49% Engagement Rate",
+      ],
+    },
+    {
+      type: "image",
+      src: "/projects/suits-gsc-screenshot.webp",
+      alt: "Google Search Console stats",
+    },
+    {
+      type: "list",
+      items: [
+        "Clicks & Impressions have consistently grown since March 2025",
+        "Pages now appearing for relevant long-tail keywords",
+      ],
+    },
+    {
+      type: "heading",
+      text: "3. Technical Improvements ⚙️",
+    },
+    {
+      type: "paragraph",
+      text: "Enhanced site performance and technical SEO through:",
+    },
+    {
+      type: "list",
+      items: [
+        "Image compression & lazy loading",
+        "Cache setup via WP Rocket",
+        "Structured data implementation",
+        "Speed & mobile usability fixes",
+      ],
+    },
+    {
+      type: "paragraph",
+      text: "📌<strong>wins:</strong>",
+    },
+    {
+      type: "list",
+      items: [
+        "✔ Faster load times for blog and service pages",
+        "✔ Improved crawlability & indexation",
+        "✔ Mobile-friendliness boosted user engagement",
+      ],
+    },
+    {
+      type: "paragraph",
+      text: "✅ Want similar results for your business site? Let’s connect and scale your traffic with a data-driven SEO strategy.",
+    },
+  ],
+},
 ];
